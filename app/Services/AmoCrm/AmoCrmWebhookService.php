@@ -1,6 +1,5 @@
 <?php
 
-// app/Services/AmoCrm/AmoCrmWebhookService.php
 namespace App\Services\AmoCrm;
 
 use App\Models\AmoCrmActionLog;
