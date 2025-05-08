@@ -1,5 +1,4 @@
 <?php
-// app/Http/Controllers/WebhookController.php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -34,7 +33,7 @@ class WebhookController extends Controller
             }
 
             return response('Webhook обработан', 200);
-        } catch (\Throwable $e) { // Ловим Throwable для более широкого охвата ошибок
+        } catch (\Throwable $e) {
             Log::error('Критическая ошибка обработки вебхука AmoCRM: ' . $e->getMessage(), [
                 'exception_class' => get_class($e),
                 'file' => $e->getFile(),
